@@ -21,12 +21,19 @@ public void setup()
 public void draw()
 {
 	body() ;
+	head() ;
 }
 public void body()
 {
 	fill(255,155,0);
-	ellipse(150,150,50,150);
+	ellipse(150,150,60,150);
 }
+public void head()
+{
+	fill(255,155,0);
+	ellipse(150,75,60,60);
+	shininess(5,0);
+} 
 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalDesign" };
