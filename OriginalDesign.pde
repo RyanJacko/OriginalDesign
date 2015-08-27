@@ -1,7 +1,8 @@
+int x = 10;
 void setup()
 {
+ frameRate(2000);
  size (300,300);
- noLoop();
 }
 void draw()
 {
@@ -9,6 +10,11 @@ void draw()
 	body() ;
 	head() ;
   eyes() ;
+  test() ;
+}
+void test()
+{
+  quad(222,225,202,204,206,201,205,208);
 }
 void scence()
 {
@@ -18,7 +24,7 @@ void scence()
 } 
 void body()
 {
-  fill(178,100,100);
+  fill((int)(Math.random()*1000),(int)(Math.random()*1000),(int)(Math.random()*1000));
   line(222,225,75,75);
   line(242,150,50,150);
   line(222,75,75,225);
