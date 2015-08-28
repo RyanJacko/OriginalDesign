@@ -75,7 +75,7 @@ void mouseDragged()
   noLoop();
   background(100, 31, 31);
   textSize(50);
-  text("SPLAT!",(int)(Math.random()+20) ,(int)(Math.random()+20));
+  text("SPLAT!",150 ,150);
 }
 void mousePressed()
 {
