@@ -85,7 +85,7 @@ void mouseReleased()
 {
   x = x - 50;
 }
-void mouseWheel()
+void keyPressed()
 {
   loop();
 }
