@@ -1,12 +1,12 @@
 int x = 0;
 void setup()
 {
- frameRate(200);
+ frameRate(100);
  size (300,300);
 }
 void draw()
 {
-  rotate(x);
+  translate(mouseX-150,mouseY-138);
   scence() ;
   legs();
  	body() ;
@@ -20,9 +20,12 @@ void legs()
   stroke(0,0,0);
   line(171,97,72,31);
   line(187,57,232,31);
-  line(222,225,75,75);
-  line(242,150,50,150);
-  line(222,75,75,225);
+  line(146,143,75,x+75);
+  line(147,150,50,x+150);
+  line(146,156,63,x+223);
+  line(234,x+226,151,155);
+  line(250,x+150,152,150);
+  line(227,x+75,150,143);
 }
 void wings()
 {
@@ -67,11 +70,26 @@ void details()
   ellipse(150,138,30,2);
   
 }
-void  mouseClicked()
+void mouseDragged()
 {
-  x = x + 90;
-} 
- 
+  noLoop();
+  background(100, 31, 31);
+  textSize(50);
+  text("SPLAT!",(int)(Math.random()+20) ,(int)(Math.random()+20));
+}
+void mousePressed()
+{
+  x = x + 50;
+}
+void mouseReleased()
+{
+  x = x - 50;
+}
+void mouseWheel()
+{
+  loop();
+}
+
 
   
   
