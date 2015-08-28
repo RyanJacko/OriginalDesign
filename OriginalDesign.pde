@@ -75,7 +75,7 @@ void mouseDragged()
   noLoop();
   background(100, 31, 31);
   textSize(50);
-  text("SPLAT!",150 ,150);
+  text("SPLAT!",100 ,100);
 }
 void mousePressed()
 {
